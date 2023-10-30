@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // eslint-disable-next-line import/extensions
-import { askNameAndGreet } from '../src/cli.js';
+import { askNameAndGreet } from '../cli.js';
 
 //import { game } from '../src/brain-even.js'
 

@@ -10,4 +10,6 @@ export const isEven = (number) => {
     }
 };
 
-export const randomNumber = getRandomInt(0, 100);
+export const randomNumber = () => {
+    return getRandomInt(0, 100);
+};
