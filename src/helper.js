@@ -2,10 +2,6 @@ export const getRandomInt = (min, max) => {
     return Math.ceil(Math.random() * (max + min));
 };
 
-// export const randomElement = result[Math.floor(Math.random() * result.length)];
-
-
-//make it better and logically
 export const isEven = (number) => {
     if (number % 2 === 0) {
         return true;
@@ -14,12 +10,6 @@ export const isEven = (number) => {
     }
 };
 
-// export const randomNumber = () => {
-//     return getRandomInt(0, 100);
-// };
-
-
-//switch case is too big maybe try to do it better
 export const getGameRule = (game) => {
     let result;
     switch (game) {
@@ -34,6 +24,9 @@ export const getGameRule = (game) => {
             break;
         case 'brain-progression':
             result = 'What number is missing in the progression?';
+            break;
+        case 'brain-prime':
+            result = 'Answer "yes" if given number is prime. Otherwise answer "no".';
             break;
         default:
             result = '';
@@ -59,4 +52,11 @@ export const calculateSum = (coll) => {
         sum += coll[i];
     }
     return sum;
+};
+
+export const isPrime = (num) => {
+    for (let i = 2, s = Math.sqrt(num); i <= s; i++) {
+        if (num % i === 0) return false;
+    }
+    return num > 1;
 };

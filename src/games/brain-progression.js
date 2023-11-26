@@ -20,4 +20,3 @@ export const brainProg = () => {
 
 
 export default brainProg;
-
