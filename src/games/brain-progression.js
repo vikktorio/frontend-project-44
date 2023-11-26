@@ -18,5 +18,4 @@ export const brainProg = () => {
     return [answer, resultStr]; 
 };
 
-
 export default brainProg;
